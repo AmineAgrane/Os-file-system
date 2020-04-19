@@ -21,7 +21,7 @@
 
 #define NOMBREBLOCS 300          // Nombre de blocs dans la partition
 #define TAILLEBLOC 560   		 // Taille de chaque Bloc
-#define MAXNOMFICHIER  20		 // Taille maximale pour le nom d'un Bloc (Fichier ou Dossier)
+#define MAXNOMFICHIER  20		 // Taille maximale pour le nom d'un Bloc
 #define TAILLEREPERTOIR 25       // Nombre de documents (Fichier ou repertoir) qu'un repertoir peut contenir
 const int tab_init[25] = { -1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1};
 
@@ -38,17 +38,17 @@ const int tab_init[25] = { -1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1
 
 typedef struct Bloc
 {
-  int FICHIER_DOSSIER;			     /*!<  Indique si le bloc représente un fichier ou un dossier (1 => fichier 0 => dossier) */
-  int ID_BLOC;                       /*!<  Identifiant unique du bloc à l'intérieur de la partition */
-  int LIBRE;				         /*!<  Indique si le bloc est occupé ou non (1 => Libre 0 => occupé) */
-  char NOM_BLOC[MAXNOMFICHIER];      /*!<  Le nom du Bloc (Nom du fichier ou du dossier) */
-  int PERE;						     /*!<  L'identifiant unique du répertoir Parent d'un fichier ou d'un dossier */
-  int LIENS[TAILLEREPERTOIR];		 /*!<  Tableau d'identifiants    de bloc, les identifiant se trouvant dans ce bloc
-  										représentent les éléemnt contenu à l'intérieur du fichier représenté par ce bloc
-										. L'ensemble du tableau vaut -1 dans le cas d'un fichier*/
-  char DONNEES[MAXDONNEEBLOC];       /*!<  Les données stockées sur le bloc(Contenu d'un fichier)*/
-  int BLOC_SUIVANT;				     /*!<  Contient l'identifiant du bloc qui contient la suite du fichier
-	 						         Prends -1 si le fichier est contenu dans un seul bloc ou si le bloc représente un dossier */
+  int FICHIER_DOSSIER;			     //  Indique si le bloc représente un fichier ou un dossier (1 => fichier 0 => dossier)
+  int ID_BLOC;                       //  Identifiant unique du bloc à l'intérieur de la partition
+  int LIBRE;				         //  Indique si le bloc est occupé ou non (1 => Libre 0 => occupé)
+  char NOM_BLOC[MAXNOMFICHIER];      //  Le nom du Bloc (Nom du fichier ou du dossier)
+  int PERE;						     //  L'identifiant unique du répertoir Parent d'un fichier ou d'un dossier
+  char DONNEES[MAXDONNEEBLOC];       //  Les données stockées sur le bloc(Contenu d'un fichier)
+  int LIENS[TAILLEREPERTOIR];        /*  Tableau d'identifiants    de bloc, les identifiant se trouvant dans ce bloc
+                                         représentent les éléemnt contenu à l'intérieur du fichier représenté par ce bloc
+                                         L'ensemble du tableau vaut -1 dans le cas d'un fichier */
+  int BLOC_SUIVANT;				     /*  Contient l'identifiant du bloc qui contient la suite du fichier
+	 						             Prends -1 si le fichier est contenu dans un seul bloc ou si le bloc représente un dossier */
 }Bloc;
 
 //Signatures fonctions et procédures
