@@ -23,7 +23,7 @@ git clone https://github.com/Anclaguedon/Os-file-system
 
 Then go to the directory
 ```
-cd os_project
+cd src
 ```
 
 Compile and run
