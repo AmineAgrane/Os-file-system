@@ -1,0 +1,2 @@
+Projet Systeme d'exploitation :
+SI l'utilisateur veut instancier un fichier avec un certain contenu, il n'a qu'a écrire son contenu dans son fichier text, puis executer la commande fichier <nom_fichier>, ceci aura pour resultat la creation d'un fichier avec le meme contenu present dans ce fichier texte.
