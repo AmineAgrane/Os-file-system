@@ -26,7 +26,4 @@ To run
 
 ## File system structure
 The partition (Unix file) is divided into N blocks of equal size.
-
-![File system structure](/docs/file_system_structure.png)
-
-
+<img src="https://github.com/Anclaguedon/Os-file-system/blob/master/docs/file_system_structure.png" width="560" height="600">
