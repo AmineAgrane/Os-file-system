@@ -3,8 +3,7 @@
  * \file programme.c
  * \brief Fichier contenant le programme qui simule une interface shell via lquelle on peut
  * tester les fonctions implémentées sur la partition.
- * \author Agrane Amine 40% / Khelfane Lydia 30% / Metidji Fares 30%
- * \version 1
+ * \author Agrane Amine 
  * \date 28 mars 2019
  */
 int main(int argc, char ** argv) 

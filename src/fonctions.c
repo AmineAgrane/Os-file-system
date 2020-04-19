@@ -2,8 +2,7 @@
 /**
  * \file fonctions.c
  * \brief Fichier contenant l'ensemble des fonctions et procédures du projet.
- * \author Agrane Amine 
- * \version 1
+ * \author Agrane Amine
  * \date 28 mars 2019
  */
 
