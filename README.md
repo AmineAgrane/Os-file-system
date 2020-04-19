@@ -2,7 +2,7 @@
 OS Project : Simple file manager that uses a simulated partition (UNIX file) as support to store files and directories. 
 
 ## Getting started
-### installing and compile
+### Installing and compile
 To install this project:
 First download the project from :
 ```
@@ -23,3 +23,8 @@ To run
 ```
 ./programme
 ```
+
+## File system structure
+The partition (Unix file) is divided into N blocks of equal size.
+
+
