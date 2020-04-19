@@ -26,14 +26,10 @@ Then go to the directory
 cd os_project
 ```
 
-Compile source code and generate docs
+Compile and run
 ```
 make
-make gendocs
-```
-To run
-```
-./programme
+./programme partition
 ```
 
 ## File system structure
