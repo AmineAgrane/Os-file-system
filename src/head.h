@@ -38,17 +38,25 @@ const int tab_init[25] = { -1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1
 
 typedef struct Bloc
 {
-  int FICHIER_DOSSIER;			     //  Indique si le bloc représente un fichier ou un dossier (1 => fichier 0 => dossier)
-  int ID_BLOC;                       //  Identifiant unique du bloc à l'intérieur de la partition
-  int LIBRE;				         //  Indique si le bloc est occupé ou non (1 => Libre 0 => occupé)
-  char NOM_BLOC[MAXNOMFICHIER];      //  Le nom du Bloc (Nom du fichier ou du dossier)
-  int PERE;						     //  L'identifiant unique du répertoir Parent d'un fichier ou d'un dossier
-  char DONNEES[MAXDONNEEBLOC];       //  Les données stockées sur le bloc(Contenu d'un fichier)
-  int LIENS[TAILLEREPERTOIR];        /*  Tableau d'identifiants    de bloc, les identifiant se trouvant dans ce bloc
-                                         représentent les éléemnt contenu à l'intérieur du fichier représenté par ce bloc
-                                         L'ensemble du tableau vaut -1 dans le cas d'un fichier */
-  int BLOC_SUIVANT;				     /*  Contient l'identifiant du bloc qui contient la suite du fichier
-	 						             Prends -1 si le fichier est contenu dans un seul bloc ou si le bloc représente un dossier */
+  //  Indique si le bloc représente un fichier ou un dossier (1 => fichier 0 => dossier)
+  int FICHIER_DOSSIER;
+  //  Identifiant unique du bloc à l'intérieur de la partition
+  int ID_BLOC;
+  //  Indique si le bloc est occupé ou non (1 => Libre 0 => occupé)
+  int LIBRE;
+  //  Le nom du Bloc (Nom du fichier ou du dossier)
+  char NOM_BLOC[MAXNOMFICHIER];
+  //  L'identifiant unique du répertoir Parent d'un fichier ou d'un dossier
+  int PERE;
+  //  Les données stockées sur le bloc(Contenu d'un fichier)
+  char DONNEES[MAXDONNEEBLOC];
+  /*  Tableau d'identifiants    de bloc, les identifiant se trouvant dans ce bloc
+  représentent les éléemnt contenu à l'intérieur du fichier représenté par ce bloc
+  L'ensemble du tableau vaut -1 dans le cas d'un fichier */
+  int LIENS[TAILLEREPERTOIR];
+  /*  Contient l'identifiant du bloc qui contient la suite du fichier
+  Prends -1 si le fichier est contenu dans un seul bloc ou si le bloc représente un dossier */
+  int BLOC_SUIVANT;
 }Bloc;
 
 //Signatures fonctions et procédures
