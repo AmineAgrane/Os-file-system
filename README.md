@@ -14,17 +14,12 @@ Then go to the directory
 cd os_project
 ```
 
-Then compile using make
+Compile source code and generate docs
 ```
 make
-```
-
-Compile and generate docs
-```
 make gendocs
 ```
-
-To run and test
+To run
 ```
 ./programme
 ```
